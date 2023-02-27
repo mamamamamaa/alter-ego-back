@@ -8,7 +8,7 @@ const getNews = async (req, res) => {
     method: "GET",
     url: API_SERVER,
     params: {
-      q: query,
+      q: query || "ukraine",
       pageNumber: page,
       pageSize,
       apiKey: API_KEY,
