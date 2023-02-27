@@ -2,12 +2,7 @@ const axios = require("axios");
 const { API_SERVER, API_KEY } = process.env;
 
 const getNews = async (req, res) => {
-  const {
-    query = "ukraine",
-    pageSize = 30,
-    page = 1,
-    language = "en",
-  } = req.query;
+  const { query, pageSize, page, language } = req.query;
 
   const options = {
     method: "GET",
