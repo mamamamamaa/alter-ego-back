@@ -9,7 +9,7 @@ const getNews = async (req, res) => {
     url: API_SERVER,
     params: {
       q: query || "ukraine",
-      pageNumber: page,
+      page: page,
       pageSize,
       apiKey: API_KEY,
       language,
